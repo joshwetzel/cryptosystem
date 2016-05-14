@@ -1,5 +1,5 @@
-require 'minitest/autorun'
 require 'cryptosystem'
+require 'minitest/autorun'
 
 if !defined?(Minitest::Test)
   Minitest::Test = MiniTest::Unit::TestCase
