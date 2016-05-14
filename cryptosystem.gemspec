@@ -8,6 +8,10 @@ Gem::Specification.new do |s|
   s.version = Cryptosystem::VERSION
   s.files   = `git ls-files`.split($/)
   s.summary = 'Simple asymmetric (public-key) encryption.'
+  s.description = <<-DESC
+    Cryptosystem is a Ruby library facilitating simple encryption and
+    decryption with asymmetric cryptography (or public-key cryptography).
+  DESC
   s.author  = 'Josh Wetzel'
   s.license = 'MIT'
   s.required_ruby_version = '~> 2'
