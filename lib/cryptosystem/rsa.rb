@@ -19,12 +19,14 @@ module Cryptosystem
     end
 
     def encrypt(value)
+      return nil if value.nil?
       base64_encode(public_key.public_encrypt(value))
     rescue => error
       raise EncryptError, error.message
     end
 
     def decrypt(value)
+      return nil if value.nil?
       private_key.private_decrypt(base64_decode(value))
     rescue => error
       raise DecryptError, error.message

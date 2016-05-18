@@ -29,15 +29,11 @@ class RSATest < Minitest::Test
     assert Base64.strict_encode64(@rsa.decrypt(@rsa.encrypt('test')))
   end
 
-  def test_bad_encrypt_raises_exception
-    assert_raises Cryptosystem::EncryptError do
-      @rsa.encrypt(nil)
-    end
+  def test_encrypting_nil_value_returns_nil
+    assert_nil @rsa.encrypt(nil)
   end
 
-  def test_bad_decrypt_raises_exception
-    assert_raises Cryptosystem::DecryptError do
-      @rsa.decrypt(nil)
-    end
+  def test_decrypting_nil_value_returns_nil
+    assert_nil @rsa.decrypt(nil)
   end
 end
