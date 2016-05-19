@@ -33,6 +33,18 @@ Cryptosystem::RSA.configure do |config|
 end
 ```
 
+Configuration options may also be passed in or overridden when instantiating a new object.
+
+```ruby
+config = {
+  password: ENV['secret-password'],
+  private_key_path: 'path/to/private.key',
+  public_key_path: 'path/to/public.pub'
+}
+
+rsa = Cryptosystem::RSA.new(config)
+```
+
 ## Encrypting
 After generating a key pair and properly configuring Cryptosystem, encryption is straightforward.
 
