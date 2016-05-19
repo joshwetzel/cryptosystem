@@ -10,10 +10,10 @@ module Cryptosystem
     attr_reader :private_key_path
     attr_reader :public_key_path
 
-    def initialize
-      @password = Cryptosystem::RSA.password
-      @private_key_path = expand_path(Cryptosystem::RSA.private_key_path)
-      @public_key_path = expand_path(Cryptosystem::RSA.public_key_path)
+    def initialize(config = {})
+      @password = config[:password] || Cryptosystem::RSA.password
+      @private_key_path = expand_path(config[:private_key_path] || Cryptosystem::RSA.private_key_path)
+      @public_key_path = expand_path(config[:public_key_path] || Cryptosystem::RSA.public_key_path)
     rescue => error
       raise ConfigurationError, error.message
     end
