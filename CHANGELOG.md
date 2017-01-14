@@ -1,3 +1,6 @@
+#### 1.0.0
+* Version bump; no changes from previous.
+
 #### 0.0.2
 * Allow configuration options to be passed in or overridden during instantiation.
 
