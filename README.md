@@ -1,5 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/cryptosystem.svg)](https://badge.fury.io/rb/cryptosystem)
 [![Build Status](https://travis-ci.org/joshwetzel/cryptosystem.svg?branch=master)](https://travis-ci.org/joshwetzel/cryptosystem)
+[![Coverage Status](https://coveralls.io/repos/github/joshwetzel/cryptosystem/badge.svg?branch=master)](https://coveralls.io/github/joshwetzel/cryptosystem?branch=master)
 
 # Cryptosystem
 Cryptosystem is a Ruby library facilitating simple encryption and decryption with asymmetric cryptography (or public-key
