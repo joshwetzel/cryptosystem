@@ -1,21 +1,15 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cryptosystem/version'
+require File.expand_path('../lib/cryptosystem/version', __FILE__)
 
-Gem::Specification.new do |s|
-  s.name    = 'cryptosystem'
-  s.version = Cryptosystem::VERSION
-  s.files   = `git ls-files`.split($/)
-  s.summary = 'Simple asymmetric (public-key) encryption.'
-  s.description = <<-DESC
-    Cryptosystem is a Ruby library facilitating simple encryption and
-    decryption with asymmetric cryptography (or public-key cryptography).
-  DESC
-  s.author  = 'Josh Wetzel'
-  s.license = 'MIT'
-  s.required_ruby_version = '~> 2'
+Gem::Specification.new do |spec|
+  spec.name = 'cryptosystem'
+  spec.version = Cryptosystem::VERSION
+  spec.summary = 'Simple encryption and decryption with asymmetric (or public-key) cryptography.'
+  spec.author = 'Josh Wetzel'
+  spec.license = 'MIT'
 
-  s.add_development_dependency 'minitest'
-  s.add_development_dependency 'rake'
+  spec.files = `git ls-files`.split($/)
+  spec.required_ruby_version = '~> 2'
+
+  spec.add_development_dependency 'minitest', '~> 5'
+  spec.add_development_dependency 'rake', '~> 12'
 end
