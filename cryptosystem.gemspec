@@ -15,4 +15,7 @@ Gem::Specification.new do |s|
   s.author  = 'Josh Wetzel'
   s.license = 'MIT'
   s.required_ruby_version = '~> 2'
+
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'rake'
 end
