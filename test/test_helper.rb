@@ -1,5 +1,8 @@
+require 'coveralls'
 require 'cryptosystem'
 require 'minitest/autorun'
+
+Coveralls.wear!
 
 if !defined?(Minitest::Test)
   Minitest::Test = MiniTest::Unit::TestCase
