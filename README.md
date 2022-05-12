@@ -62,6 +62,3 @@ rsa = Cryptosystem::RSA.new
 encrypted_value = rsa.encrypt('secret') # => "Y8DWJc2/+7TIxdLEolV99XI2sclHuK..."
 rsa.decrypt(encrypted_value) # => "secret"
 ```
-
-## Acknowledgments
-Special thanks to [@jedspurg](https://github.com/jedspurg) for the inspiration for this project.
