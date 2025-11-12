@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project are documented here.
 
+## 1.2.0
+* Add `base64` as a dependency.
+* Add official support for Ruby 3.4.
+
 ## 1.1.0
 * Add official support for Ruby 3.
 * Various development and repository changes.
