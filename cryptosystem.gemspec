@@ -10,6 +10,8 @@ Gem::Specification.new do |spec|
   spec.files = Dir['lib/**/*.rb']
   spec.required_ruby_version = '>= 2'
 
+  spec.add_dependency 'base64'
+
   spec.add_development_dependency 'minitest'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rubocop'
